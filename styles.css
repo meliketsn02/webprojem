@@ -1,73 +1,39 @@
-.duzelt {
-  clear:both;
-}
-#menü{
-  float: right;
-  background-color: pink;
-}
-
-#ortala {
-  margin: 0 auto;
-  width:800px;
+#logo {
+     float: left;
+     width: 50px;
+     height: 10px;
+     margin: 0px 0px;
 }
 
-#header {
-  margin-top:-10px;
-  margin-left:-10px;
-  margin-right: -10px;
-  background-color: #000;
-  height: 50px;
-  color: #FFF;
+#menu {           
+ background-color: #ef9c00;
+ height: 40px;
+ width: 480px;
+ margin-left:500px;
+margin-right:500px;
 }
 
-#left {
-  margin-top: 10px;
-  width: 615px;
-  float: left;
+#menu ul {
+ margin: 0px;
+ padding: 0px;
 }
-
-#right {
-  margin-top:10px;
-  float: right;
-  width: 185px;
+#menu ul li {
+ float: left;
+ width: 120px;
+ list-style-type: none;
 }
-#slider {
-  background-color: #000;
-  height: 100px;
-  color: #FFF;
-  width: 610px;
+#menu ul li a {
+ line-height: 40px;
+ font-family: Tahoma;
+ color: #FFF;
+ text-decoration: none;
+ text-align: center;
+ display: block;
+ border-right-width: 1px;
+ border-right-style: solid;
+ border-right-color: #fff;
+ font-size: 14px;
 }
-.icerik {
-  float: left;
-  margin-top: 10px;
-  background: #000;
-  margin-right: 5px;
-  height: 100px;
-  width: 200px;
-  color: #FFF;
-}
-.konu {
-  margin-top: 10px;
-  width: 610px;
-  height: 150px;
-  background-color: #000;
-  color: #FFF;
-}
-.widgets {
-  margin-bottom: 10px;
-  background: #000;
-  height: 150px;
-  width: 175px;
-  color: #FFF;
-}
-
-
-#footer {
-  margin-top: 100px;
-  margin-bottom: -10px;
-  margin-left: -10px;
-  margin-right: -10px;
-  background-color: #000;
-  height: 50px;
-  color: #FFF;
+#menu ul li a:hover {
+    background-color: #4183f0;
 }
