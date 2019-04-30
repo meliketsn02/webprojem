@@ -17,65 +17,140 @@ body
 <body>
 <div class="menu">
   <ul>
-    <li><a href="#Anasayfa">Anasayfa</a></li>
-    <li><a href="#Galeri">Galeri</a></li>
-    <li><a href="#Hakkımda">Hakkımda</a></li>
-    <li><a href="#Siparişler">Siparişler</a></li>
-    <li><a href="#İletişim">İletişim</a></li>
+    <li><a href="Anasayfa.html">Anasayfa</a></li>
+    <li><a href="Galeri.html">Galeri</a></li>
+    <li><a href="Hakkımızda.html">Hakkımızda</a></li>
+    <li><a href="İletişim.html">İletişim</a></li>
   </ul>
 </div>
+<form method="POST" action="#" >
 
-<div class="slideshow-container">
+<table border="1" align="center" cellpadding="3" bgcolor="white">
+<tr>
+<td colspan="2" align="center">
+<h3>İş Başvuru Formu</h3>
+</td>
+</tr>
+<tr>
+<td>Adı</td>
+<td><input type="text" name="Adınız"></td>
+</tr>
+ 
+<tr>
+<td>Soyadı</td>
+<td><input type="text" name="Soyadınız"></td>
+</tr>
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="img1.jpg" style="width:100%">
-  <div class="text">Caption Text</div>
-</div>
+<tr>
+<td>Kullanıcı Adı</td>
+<td><input type="text" name="Kullanıcı"></td>
+</tr>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="img2.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
-</div>
+<tr>
+<td>Şifre</td>
+<td><input type="password" name="Sifre"></td>
+</tr>
+ 
+<tr>
+<td>Doğum Tarihi</td>
+<td><input type="date" name="DoğumTARİHİ"></td>
+</tr>
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="img3.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
-</div>
+<tr>
+<td>Doğum Yeri</td>
+<td>
+  <select name="dogumyeri">
+       <option value="06">Ankara</option>
+       <option value="34">İstanbul</option> 
+       <option value="35">İzmir</option>
+       <option value="00">Diğer</option>
+    </select>
+</td>
+</tr>
 
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
-
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
-
+<tr>
+<td>Cinsiyet</td>
+<td>
+<input type="radio" name="Cinsiyet" value="Bay">Bay
+<input type="radio" name="Cinsiyet" value="Bayan">Bayan
+</td>
+</tr>
+ 
+<tr>
+<td>Referanslar</td>
+<td>
+    <textarea cols="40" rows="3"></textarea>
+</td>
+</tr>
+ 
+<tr>
+<td>Alışkanlıklar</td>
+<td>
+<input type="radio" name="sigara" value="0">Sigara içiyorum
+<input type="radio" name="sigara" value="1">Sosyal içiciyim
+<input type="radio" name="sigara" value="2">İçmiyorum
+</td>
+</tr>
+ 
+<tr>
+<td>Yabancı Dil</td>
+<td>
+<input type="checkbox" name="en">İngilizce<br>
+<input type="checkbox" name="de">Almanca<br>
+<input type="checkbox" name="fr">Fransızca<br>
+<input type="checkbox" name="ing">İspanyolca<br>
+<input type="checkbox" name="es">Çince<br>
+<input type="checkbox" name="ru">Rusça
+</td>
+</tr>
+ 
+<tr>
+<td>Askerlik</td>
+<td>
+<select name="askerlik">
+<option value="tecilli">Tecilli</option> 
+<option value="muaf">Muaf</option>
+<option value="Yapıldı">Yapıldı</option>
+</select>
+</td>
+</tr>
+ 
+<tr>
+<td>Eğitim</td>
+<td>
+<select name="egitim">
+<option value="lise">Lise</option> 
+<option value="onlisans">Ön Lisans</option>
+<option value="lisans">Lisans</option>
+<option value="y.lisans">Y.Lisans</option>
+<option value="doktora">Doktora</option>
+</select>
+</td>
+</tr>
+ 
+<tr>
+<td>Geçmiş İşler</td>
+<td>
+<textarea cols="40" rows="4"></textarea>
+</td>
+</tr>
+ 
+<tr>
+<td colspan="2" align="center">
+<input type="submit" 
+  value="Kaydet">
+</td>
+</tr>
+<div id ="footer"></div>
+    <div>
+      <table width="4000" height="80" border="0" bgcolor="pink">
+        <tr>
+          <td><div align="center"><marquee direction=right>Melike Tosun 2019 </marquee></div>
+           
+          </td>
+        </tr>
+      </table>
+    </div>
 
 
 	</body>

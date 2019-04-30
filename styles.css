@@ -70,3 +70,60 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+#sol
+      {
+        float:left;
+        width:550px;
+        height:300px;
+        background:#8a0810
+       
+      }
+      
+      #sag
+      {
+        float:left;
+        width:550px;
+        height:300px;
+        background:#8a0810;
+        position: relative;
+         left:150px;
+
+      
+      }
+
+
+      #alt
+      {
+        float:right;
+        width:550px;
+        height:300px;
+        background:#8a0810
+      }
+
+        #div{
+          background: #8f1323
+          width:2500px;
+          height: 2500px;
+
+        }
+        
+table{
+
+  position: relative;
+  right:350px;
+}
+
+#table{
+  position: relative;
+  left:680px;
+}
+
+#div{
+  background: #e30421
+  height: 700px;
+  width:1200px;
+  position: relative;
+  left:330px;
+}
+
